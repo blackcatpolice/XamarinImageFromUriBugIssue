@@ -1,5 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestSyncfusion.Xamarin.WeatherPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestSyncfusion.Xamarin.WeatherPage"
+             xmlns:converter="clr-namespace:TestSyncfusion.Xamarin.Converters">
+    <ContentPage.Resources>
+        <!--<Style TargetType="{x:Type Image}">
+            <Setter Property="Border" Value="black,1"/>
+        </Style>-->
+        <StyleSheet Source="/Assets/Style.css" />
+        <ResourceDictionary>
+            <converter:ImageSourceConverter x:Key="ImageSourceConverter" /> 
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
+        <StackLayout Padding="100" >
+              <!--<Image Source="https://xamarin.com/content/images/pages/forms/example-app.png" />-->
+            <Image  Source="http://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png"
+               HeightRequest="300" />
+                    
+            <!--<Image  Source="https://xamarin.com/content/images/pages/forms/example-app.png"
+               HeightRequest="300" />-->
+            <Image   x:Name="webImg"
+               HeightRequest="300" /> 
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                 <Label StyleClass="lblTxt" Text="The weather is cool"/>
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <ContentView
-    x:Class="$rootnamespace$.Views.$fileinputname$.EmailEntry"
+    x:Class="TestSyncfusion.Xamarin.Views.Forms.EmailEntry"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
-    xmlns:control="clr-namespace:$rootnamespace$.Controls"
-    xmlns:converter="clr-namespace:$rootnamespace$.Converters">
+    xmlns:control="clr-namespace:TestSyncfusion.Xamarin.Controls"
+    xmlns:converter="clr-namespace:TestSyncfusion.Xamarin.Converters">
 
     <ContentView.Resources>
         <ResourceDictionary>

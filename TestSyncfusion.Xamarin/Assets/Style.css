@@ -1,2 +1,14 @@
 ﻿body {
 }
+ 
+image {
+    border: 1px solid black;
+}
+.lblTxt{
+    border:1px solid black;
+}
+lable {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}

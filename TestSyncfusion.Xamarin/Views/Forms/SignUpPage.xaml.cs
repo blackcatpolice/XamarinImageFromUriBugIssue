@@ -6,8 +6,8 @@ namespace TestSyncfusion.Xamarin.Views.Forms
     /// <summary>
     /// Page to sign in with user details.
     /// </summary>
-    [Preserve(AllMembers = true)]
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    //[Preserve(AllMembers = true)]
+    //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SignUpPage
     {
         /// <summary>
@@ -16,6 +16,11 @@ namespace TestSyncfusion.Xamarin.Views.Forms
         public SignUpPage()
         {
             InitializeComponent();
+        }
+
+        async void btnLoginClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new LoginPage());
         }
     }
 }

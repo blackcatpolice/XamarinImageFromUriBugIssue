@@ -1,7 +1,7 @@
-﻿using Xamarin.Forms.Internals;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
-namespace $rootnamespace$.Views.$fileinputname$
+namespace TestSyncfusion.Xamarin.Views.Forms
 {
     /// <summary>
     /// Page to login with user name and password
@@ -16,6 +16,11 @@ namespace $rootnamespace$.Views.$fileinputname$
         public LoginPage()
         {
             InitializeComponent();
+        }
+
+        async void btnSignUpClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new SignUpPage() );
         }
     }
 }

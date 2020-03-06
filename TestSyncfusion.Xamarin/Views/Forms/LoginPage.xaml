@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="$rootnamespace$.Views.$fileinputname$.LoginPage"
+    x:Class="TestSyncfusion.Xamarin.Views.Forms.LoginPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-    xmlns:control="clr-namespace:$rootnamespace$.Controls"
-    xmlns:converter="clr-namespace:$rootnamespace$.Converters"
+    xmlns:control="clr-namespace:TestSyncfusion.Xamarin.Controls"
+    xmlns:converter="clr-namespace:TestSyncfusion.Xamarin.Converters"
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
-    xmlns:local="clr-namespace:$rootnamespace$.Views.$fileinputname$"
-    xmlns:viewModel="clr-namespace:$rootnamespace$.ViewModels.$fileinputname$"
+    xmlns:local="clr-namespace:TestSyncfusion.Xamarin.Views.Forms"
+    xmlns:viewModel="clr-namespace:TestSyncfusion.Xamarin.ViewModels.Forms"
     BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=LoginBackground.png,
                                                                   iOSPhoneLandscape=LoginBackground-Landscape.png,
                                                                   iOSTabletLandscape=LoginBackground-Landscape.png}"
@@ -187,7 +187,8 @@
                             Command="{Binding SignUpCommand}"
                             CornerRadius="4"
                             Style="{StaticResource SfFlatButtonStyle}"
-                            Text="Sign Up" />
+                            Text="Sign Up"
+                            Clicked="btnSignUpClicked"/>
 
                     </StackLayout>
 

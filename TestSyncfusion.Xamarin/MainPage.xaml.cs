@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestSyncfusion.Xamarin.Views.Forms;
 using Xamarin.Forms;
 
 namespace TestSyncfusion.Xamarin
@@ -16,6 +17,11 @@ namespace TestSyncfusion.Xamarin
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        async void OnGoToLogin(System.Object sender, System.EventArgs e)
+        {
+            
         }
     }
 }

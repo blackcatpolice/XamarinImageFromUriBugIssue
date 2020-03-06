@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
-using $rootnamespace$.Controls;
+using TestSyncfusion.Xamarin.Controls;
 
-namespace $rootnamespace$.Converters
+namespace TestSyncfusion.Xamarin.Converters
 {
     /// <summary>
     /// This class have methods to convert the string values to boolean.     

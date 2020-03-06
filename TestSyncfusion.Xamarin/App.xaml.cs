@@ -1,6 +1,7 @@
 ﻿using System;
+using TestSyncfusion.Xamarin.Views.Forms;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using Xamarin.Forms.Xaml; 
 
 namespace TestSyncfusion.Xamarin
 {
@@ -8,9 +9,12 @@ namespace TestSyncfusion.Xamarin
     {
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjE5MjA0QDMxMzcyZTM0MmUzMFV2RWExVkkwMGFUWEdhOUFXZWxKdzFZRGREaGxkVEg0TkpLSUR3VGtUL2s9");
+
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new WeatherPage();
+           // MainPage = new SimpleLoginPage(); 
         }
 
         protected override void OnStart()

@@ -141,7 +141,8 @@
                             Command="{Binding LoginCommand}"
                             CornerRadius="4"
                             Style="{StaticResource SfFlatButtonStyle}"
-                            Text="Log In" />
+                            Text="Log In"
+                            Clicked="btnLoginClicked"/>
 
                     </StackLayout>
                 </StackLayout>

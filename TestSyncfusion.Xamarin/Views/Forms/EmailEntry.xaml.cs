@@ -1,7 +1,7 @@
-﻿using Xamarin.Forms.Internals;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
-namespace $rootnamespace$.Views.$fileinputname$
+namespace TestSyncfusion.Xamarin.Views.Forms
 {
     /// <summary>
     /// View used to show the email entry with validation status.
